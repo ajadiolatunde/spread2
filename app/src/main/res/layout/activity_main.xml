@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:id="@+id/pr"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btn1"
+            android:layout_weight="1"
+            android:background="@drawable/myfirst"
+
+            android:text="1"
+            android:backgroundTintMode="multiply"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btn2"
+            android:layout_weight="1"
+            android:background="@drawable/myfirst"
+
+            android:text="2"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:background="@drawable/myfirst"
+
+             android:layout_weight="1"
+            android:text="3"
+            android:id="@+id/btn3"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:background="@drawable/myfirst"
+
+            android:text="4"
+            android:layout_weight="1"
+            android:id="@+id/btn4"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Search by name"
+        android:id="@+id/search"
+        android:drawableLeft="@drawable/ic_find_in_page_black_24dp"
+        android:layout_height="wrap_content" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/lv"
+                android:layout_height="match_parent"></ListView>
+
+        </HorizontalScrollView>
+
+
+</LinearLayout>
